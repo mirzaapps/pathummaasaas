@@ -14,7 +14,7 @@
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="icon" href="assets/images/logo.png">
+    <link rel="icon" href="lko.png">
     <title>Register</title>
 </head>
 <body>
@@ -100,24 +100,25 @@
                                             <option>Thiruvananthapuram</option>
                                             <option>Thrissur</option>
                                             <option>Wayanad</option>
-                                            <option></option>
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row p-t-20">
-                            <label class="label label--block">Gender?</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">Male
-                                    <input type="radio" checked="checked" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">Female
-                                    <input type="radio" name="exist">
-                                    <span class="checkmark"></span>
-                                </label>
+                        <div class="form-row">
+                            <div class="name">District</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="gender">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -177,7 +178,7 @@
           e.preventDefault();
           jQuery('#btnSubmit').attr('disabled',true);
           jQuery.ajax({
-              url:'https://script.google.com/macros/s/AKfycbwLj4WdcDZOSMjIybHOyMepgTlLlNtM6y9UJ25YsfnaK2jvuLvdozTbu_Ncj5kHQFWl/exec',
+              url:'https://script.google.com/macros/s/AKfycbwzgacMIFLIe8U8YmrWCriOKbQLy9Hx3_BIEjhGRt9KYg_RfUOEBIzBzmfz9aryya0L/exec',
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
