@@ -32,13 +32,13 @@
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="first_name">
+                                            <input class="input--style-5" type="text" required name="first_name">
                                             <label class="label--desc">first name</label>
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="last_name">
+                                            <input class="input--style-5" type="text" required name="last_name">
                                             <label class="label--desc">last name</label>
                                         </div>
                                     </div>
@@ -49,7 +49,7 @@
                             <div class="name">Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="address">
+                                    <input class="input--style-5" type="text" required name="address">
                                 </div>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                             <div class="name">Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email">
+                                    <input class="input--style-5" type="email" required name="email">
                                 </div>
                             </div>
                         </div>
@@ -67,13 +67,13 @@
                                 <div class="row row-refine">
                                     <div class="col-3">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="area_code">
+                                            <input class="input--style-5" type="number" required name="area_code">
                                             <label class="label--desc">Country Code</label>
                                         </div>
                                     </div>
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="phone">
+                                            <input class="input--style-5" type="number" required name="phone">
                                             <label class="label--desc">Phone Number</label>
                                         </div>
                                     </div>
@@ -81,27 +81,30 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">District</div>
+                            <div  class="name">District</div>
                             <div class="value">
-                                <div class="input-group">
+                                <div aria-required="false" class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="place">
-                                            <option disabled="disabled" selected="selected">Choose option</option>
-                                            <option>Alappuzha</option>
-                                            <option>Ernakulam</option>
-                                            <option>Idukki</option>
-                                            <option>Kannur</option>
-                                            <option>Kasaragod</option>
-                                            <option>Kollam</option>
-                                            <option>Kottayam</option>
-                                            <option>Kozhikode</option>
-                                            <option>Palakkad</option>
-                                            <option>Pathanamthitta</option>
-                                            <option>Thiruvananthapuram</option>
-                                            <option>Thrissur</option>
-                                            <option>Wayanad</option>
+                                        <select name="subject" required>
+                                            <option value="" >Choose State</option>
+                                            <option value="Alappuzha">Alappuzha</option>
+                                            <option value="Ernakulam">Ernakulam</option>
+                                            <option value="Ernakulam">Idukki	</option>
+                                            <option value="Kannur">Kannur</option>
+                                            <option value="Kasaragod">Kasaragod	 </option>
+                                            <option value="Kollam">Kollam </option>
+                                            <option value="Goa">Goa </option>
+                                            <option value="Kottayam">Kottayam</option>
+                                            <option value="Kozhikode">Kozhikode</option>
+                                            <option value="Malappuram">Malappuram</option>
+                                            <option value="Palakkad">Palakkad</option>
+                                            <option value="Pathanamthitta" >Pathanamthitta</option>
+                                            <option value="Thrissur">Thrissur</option>
+                                            <option value="Wayanad">Wayanad</option>
+                                           
+                                            
                                         </select>
-                                        <div class="select-dropdown"></div>
+                                        <div  class="select-dropdown"></div>
                                     </div>
                                 </div>
                             </div>
@@ -111,8 +114,8 @@
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="gender">
-                                            <option disabled="disabled" selected="selected">Choose your Gender</option>
+                                        <select  name="gender" required>
+                                            <option value="">Choose your Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
                                         </select>
