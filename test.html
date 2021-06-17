@@ -178,7 +178,7 @@
         </div>
     </footer>
 
-    <script>
+     <script>
         jQuery('#frmSubmit').on('submit',function(e){
           e.preventDefault();
           jQuery('#btnSubmit').attr('disabled',true);
@@ -188,10 +188,7 @@
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
-                swal("Good job!", "Thanks for registering this course!","success");
-                setInterval((result) => {
-                    window.location.href="courses.html";
-                }, 10000);
+                window.location.href="afterreg.html";
               }
           });
         });
