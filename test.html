@@ -188,9 +188,7 @@
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
                 swal("Good job!", "Thanks Our team will contact you soon!", "success");
-                setInterval((result) => {
-                    window.location.href="courses.html";
-                }, 6000);
+                  window.location.href="courses.html";
               }
           });
         });
