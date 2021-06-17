@@ -187,10 +187,10 @@
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
-                swal("Good job!", "Thanks for registering thing course!", "success");
+                swal("Good job!", "Thanks for registering thing course!", "Our team will connect you soon!");
                 setInterval((result) => {
                     window.location.href="courses.html";
-                }, 2000);
+                }, 6000);
               }
           });
         });
