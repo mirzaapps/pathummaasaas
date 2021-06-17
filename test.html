@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="y.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Event Registration Form</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" id="frmSubmit">
+                        <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="first_name">
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="last_name">
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Address</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc">Country Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">District</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="place">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Alappuzha</option>
+                                            <option>Ernakulam</option>
+                                            <option>Idukki</option>
+                                            <option>Kannur</option>
+                                            <option>Kasaragod</option>
+                                            <option>Kollam</option>
+                                            <option>Kottayam</option>
+                                            <option>Kozhikode</option>
+                                            <option>Palakkad</option>
+                                            <option>Pathanamthitta</option>
+                                            <option>Thiruvananthapuram</option>
+                                            <option>Thrissur</option>
+                                            <option>Wayanad</option>
+                                            <option></option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Gender?</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">Male
+                                    <input type="radio" checked="checked" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Female
+                                    <input type="radio" name="exist">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-mich">
+                    <h4>M iT</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mich">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Costomer care</a></li>
+                        <li><a href="#">live chat</a></li>
+                        <li><a href="#">Youtube videos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mich">
+                    <h4>Courses</h4>
+                    <ul>
+                        <li><a href="#">Scratch app creator</a></li>
+                        <li><a href="#">Html and css web</a></li>
+                        <li><a href="#">nothing</a></li>
+                        <li><a href="#">nothing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mich">
+                    <h4>Media</h4>
+                    <div class="adar-links">
+                        <a href="#"><i class="fab fa-facebook-f" ></i></a>
+                        <a href="#"><i class="fab fa-twitter" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" ></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in" ></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        jQuery('#frmSubmit').on('submit',function(e){
+          e.preventDefault();
+          jQuery('#btnSubmit').attr('disabled',true);
+          jQuery.ajax({
+              url:'https://script.google.com/macros/s/AKfycbwLj4WdcDZOSMjIybHOyMepgTlLlNtM6y9UJ25YsfnaK2jvuLvdozTbu_Ncj5kHQFWl/exec',
+              type:'post',
+              data:jQuery('#frmSubmit').serialize(),
+              success:function(result){
+                alert("Form submitted successfully")
+                    window.location.reload()
+                  //window.location.href='';
+              }
+          });
+        });
+        </script>
+
+
+       <!-- Jquery JS-->
+       <script src="vendor/jquery/jquery.min.js"></script>
+       <!-- Vendor JS-->
+       <script src="vendor/select2/select2.min.js"></script>
+       <script src="vendor/datepicker/moment.min.js"></script>
+       <script src="vendor/datepicker/daterangepicker.js"></script>
+   
+       <!-- Main JS-->
+       <script src="js/global.js"></script>
+
+</body>
+</html>
