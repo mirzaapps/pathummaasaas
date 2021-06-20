@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="y.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -186,6 +187,24 @@
               }
           });
         });
+        </script>
+    
+     <script>
+            function onnpoda() {
+                var newuser = document.getElementById("usernew").value
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "mzawyd@gmail.com",
+    Password : "ynyrtozsnuctxkgl",
+    To : newuser,
+    From : "mzawyd@gmail.com.com",
+    Subject : "Succesfully registered!",
+    Body : "Thank you for restering the app making course with scratch blocks. <br/> Our team member will contact you soon....<br/> You will have a zoom meeting to understand the system we using to teching. <br/> Wishng you a good luck and happy journey with us . <br/> Thank you...!!"
+}).then(
+  message => swal("Submited!")
+);
+            }
+
         </script>
 
 
