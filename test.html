@@ -10,8 +10,8 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <script src="https://smtpjs.com/v3/smtp.js"> </script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/main.css">
@@ -34,13 +34,13 @@
                                 <div class="row row-space">
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" required name="first_name">
+                                            <input class="input--style-5" id="1name" type="text" required name="first_name">
                                             <label class="label--desc">first name</label>
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" required name="last_name">
+                                            <input class="input--style-5" id="2name" type="text" required name="last_name">
                                             <label class="label--desc">last name</label>
                                         </div>
                                     </div>
@@ -51,7 +51,7 @@
                             <div class="name">Address</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" required name="address">
+                                    <input class="input--style-5" id="add" type="text" required name="address">
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@
                                 <div class="row row-refine">
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="number" required name="phone">
+                                            <input class="input--style-5" id="pnumber" type="number" required name="phone">
                                             <label class="label--desc">Phone Number</label>
                                         </div>
                                     </div>
@@ -81,7 +81,7 @@
                             <div class="value">
                                 <div aria-required="false" class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject" required>
+                                        <select id="dist" name="subject" required>
                                             <option value="" >Choose State</option>
                                             <option value="Alappuzha">Alappuzha</option>
                                             <option value="Ernakulam">Ernakulam</option>
@@ -111,7 +111,7 @@
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
                                         <select  name="gender" required>
-                                            <option value="">Choose your Gender</option>
+                                            <option id="gender" value="">Choose your Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
                                         </select>
@@ -121,9 +121,9 @@
                             </div>
                         </div>
                         <div>
-                            <button class=" btn btn--radius-2 btn--red" onclick="onnpoda(click)" type="submit">Register</button>
-                            
+                            <button class=" btn btn--radius-2 btn--red" onclick="onnpoda()" type="submit">Register</button>
                         </div>
+                        
                     </form>
                 </div>
             </div>
@@ -136,48 +136,60 @@
                 <div class="footer-mich">
                     <h4>M iT</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mich">
+                    <h4>Get help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="#">Costomer care</a></li>
+                        <li><a href="#">live chat</a></li>
+                        <li><a href="#">Youtube videos</a></li>
                     </ul>
                 </div>
                 <div class="footer-mich">
                     <h4>Courses</h4>
                     <ul>
-                        <li><a href="scratch.html">Scratch app creator</a></li>
-                        <li><a href="courses.html">Html and css web</a></li>
+                        <li><a href="#">Scratch app creator</a></li>
+                        <li><a href="#">Html and css web</a></li>
+                        <li><a href="#">nothing</a></li>
+                        <li><a href="#">nothing</a></li>
                     </ul>
                 </div>
                 <div class="footer-mich">
                     <h4>Media</h4>
                     <div class="adar-links">
-                        <a href="https://www.facebook.com/midlajmidu.gz.9/"><i class="fab fa-facebook-f" ></i></a>
-                        <a href="https://www.instagram.com/mitcodehome/"><i class="fab fa-instagram" ></i></a>
-                        <a href="https://www.linkedin.com/in/m-it-company-751284215/"><i class="fab fa-linkedin-in" ></i></a>
+                        <a href="#"><i class="fab fa-facebook-f" ></i></a>
+                        <a href="#"><i class="fab fa-twitter" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" ></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in" ></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-     <script>
+    <script>
+        var nameo = $('#email').val
         jQuery('#frmSubmit').on('submit',function(e){
           e.preventDefault();
           jQuery('#btnSubmit').attr('disabled',true);
-          swal("Submited!");
           jQuery.ajax({
               url:'https://script.google.com/macros/s/AKfycbwzgacMIFLIe8U8YmrWCriOKbQLy9Hx3_BIEjhGRt9KYg_RfUOEBIzBzmfz9aryya0L/exec',
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
                 window.location.href="afterreg.html";
+               
               }
           });
         });
         </script>
-    
-             <script>
+
+        <script>
             function onnpoda() {
                 var genderuser =document.getElementById("gender").value
                 var sthalam = document.getElementById("dist").value
@@ -194,14 +206,13 @@
     To : newuser,
     From : "mitcode@gmail.com",
     Subject : "Succesfully registered!",
-    Body : "Thank you for registering the app making course with scratch blocks. <br/> Our team member will contact you soon....<br/> You will have a zoom meeting to understand the system we using in teching. <br/><br/> Wishing you a good luck and happy journey with us . <br/> Thank you...!! <br/> <br/> Mirza Aman <br/> - Managing director.",
+    Body : "Thank you for registering the app making course with scratch blocks. <br/> Our team member will contact you soon....<br/> You will have a zoom meeting to understand the system we using in teching. <br/><br/> Wishing you a good luck and happy journey with us.<br/><br/> Thank you...!! <br/> <br/> Mirza Aman <br/> - Managing director."
 }).then(
   message => swal("Submited!")
 );
             }
 
         </script>
-
 
 
        <!-- Jquery JS-->
