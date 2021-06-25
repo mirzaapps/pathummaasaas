@@ -170,6 +170,7 @@
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
+                  $('#frmSubmit')[0].reset();
                 swal("Confirm your email!", "We have sent a mail with confirmation link!")
                
               }
