@@ -21,6 +21,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>M iT</title>
         <!-- google-fonts -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            swal({
+  title: "Good job!",
+  text: "successfully registered!",
+  icon: "success",
+});
+        </script>
         <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="y.css">
@@ -29,6 +37,7 @@
         <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
         <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link rel="stylesheet" href="verify.css">
         <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
         <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
         <link rel="icon" href="/ligomit.png" >
@@ -39,6 +48,7 @@
     </head>
     
     <body>
+        
         <!-- top header -->
         <section class="w3l-top-header">
             <div class="container-fluid">
@@ -176,12 +186,9 @@
                 <h4 class="title-main" style="text-align: left;
                 font-weight: 510;
                 margin-left: 67px;"> 
-                    You have succesfully registerd this course! </h4>
-
                     <h5 style="margin-top: 51px;
                     text-align: left;
-                    margin-left: 70px; color: #707070; font-family:  'Montserrat', sans-serif;">
-                     You will have recived an email.<br>
+                    margin-left: 70px; color: #707070; font-family:  'Montserrat', sans-serif;" >
                     Now, our team will contact you soon. <br>
                     Please attend all the classes! <br>
                     Thanks!
@@ -191,10 +198,10 @@
         
 <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 ">
-            <a class="btn btn-style btn-style-secondary mt-3" href="index.html"
+            <a id="ver" type="button" class="btn btn-style btn-style-secondary mt-3" href="index.html"
              style="width: 289px;
             height: 52px;
-            margin-left: 90px; margin-bottom: 60px;">I'm understand, Go back</a>
+            margin-left: 90px; margin-bottom: 60px;"> I'm understand, Go back</a>
         </div>
     </div>
         
