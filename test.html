@@ -170,7 +170,7 @@
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
-                window.location.href="afterreg.html";
+                swal("Confirm your email!", "We have sent a mail with confirmation link!")
                
               }
           });
@@ -196,7 +196,7 @@
     Subject : "Succesfully registered!",
     Body : "Thank you for registering the app making course with scratch blocks. <br/>Please click on this link to to confirm-https://bit.ly/3x8K2rX your registration <br/> Our team member will contact you soon....<br/> You will have a zoom meeting to understand the system we using in teaching. <br/><br/> Wishing you a good luck and happy journey with us.<br/><br/> Thank you...!! <br/> <br/> Mirza Aman <br/> - Managing director."
 }).then(
-  message => swal("Submited!")
+  
 );
             }
 
