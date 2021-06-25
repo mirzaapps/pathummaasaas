@@ -165,13 +165,13 @@
         jQuery('#frmSubmit').on('submit',function(e){
           e.preventDefault();
           jQuery('#btnSubmit').attr('disabled',true);
+            swal("Confirm your email!", "We have sent a mail with confirmation link!")
           jQuery.ajax({
               url:'https://script.google.com/macros/s/AKfycbwb8RdJcNspX6bfrap_tOnLt4i2gSeP7oD5Qx0iVml8WQdTLnWWAySvjjOzVQBjS3sJ/exec',
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
                   $('#frmSubmit')[0].reset();
-                swal("Confirm your email!", "We have sent a mail with confirmation link!")
                
               }
           });
