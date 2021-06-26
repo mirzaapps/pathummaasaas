@@ -16455,6 +16455,7 @@ p.count-text {
   padding: 10px;
   background: var(--bg-color-2);
   border-radius: 8px;
+  margin-bottom: 16px;
 }
 
 .w3l-team .team-grids {
