@@ -533,6 +533,7 @@ small,
 .small {
   font-size: 80%;
   font-weight: 400;
+  margin-left: 48px;
 }
 
 mark,
@@ -16451,7 +16452,7 @@ p.count-text {
 
 /* team section */
 .team-block-single {
-  box-shadow: 0 20px 62px var(--box-shadow-color);
+  box-shadow: 0 5px 4px var(--box-shadow-color);
   padding: 10px;
   background: var(--bg-color-2);
   border-radius: 8px;
@@ -16503,6 +16504,7 @@ p.count-text {
 h5.member a {
   font-weight: 600;
   color: var(--heading-color);
+  margin-left: 80px;
 }
 
 .w3l-team .team-block-single:hover h5.member a {
@@ -17247,6 +17249,9 @@ h3.title-big {
 
 .about-2-secs-right img {
   border-radius: 8px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+
 }
 
 /* //about section */
@@ -17360,4 +17365,27 @@ h3.title-big {
 }
 .mmdename{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ataglanve{
+
+}
+.titlemic h1{
+  font-weight: 600 !important;
+  font-size: 3.375rem;
+  line-height: 4.375rem;
+  margin-bottom: 1.5rem;
+  margin-left: 43px;
+  text-decoration: underline rgb(230, 230, 230);
+}
+.paramichu p{
+  font-size: 1.125rem;
+  line-height: 2rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  margin-left: 60px;
+  color: rgb(230, 240, 255);
+}
+.about-2-secs-right h3{
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
