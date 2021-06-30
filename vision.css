@@ -1,0 +1,28 @@
+.visionmit{
+    margin-top: 30px;
+}
+.visionmit h2{
+    text-decoration: underline rgb(235, 80, 24) ;
+    margin-left: 330px;
+    margin-bottom: 1.5rem;
+    font-size: 3.375rem;
+    font-weight: 600 !important;
+}
+.visionmit h4{
+    margin-left: 300px;
+    margin-bottom: 33px;
+}
+
+@media(max-width: 767px){
+    .visionmit {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .visionmit {
+        width: 100%;
+    }
+}
+
