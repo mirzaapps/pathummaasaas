@@ -163,12 +163,13 @@
         jQuery('#frmSubmit').on('submit',function(e){
           e.preventDefault();
           jQuery('#btnSubmit').attr('disabled',true);
+            swal("Confirm your email!", "We have sent a mail with confirmation link!")
           jQuery.ajax({
               url:'https://script.google.com/macros/s/AKfycbxNcNJORsvLXQf1VNFAtMQBgvc7xsoLgsm2y-1v9bIXA4To07zPjieBrZxjLke4ycMh/exec',
               type:'post',
               data:jQuery('#frmSubmit').serialize(),
               success:function(result){
-                
+                $('#frmSubmit')[0].reset();
                
               }
           });
