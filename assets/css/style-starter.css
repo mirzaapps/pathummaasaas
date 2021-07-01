@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /*--
-Author: W3layouts
 Author URL: http://w3layouts.com
---*/
+--*/Author: W3layouts
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -17375,7 +17375,7 @@ h3.title-big {
   font-size: 3.375rem;
   line-height: 4.375rem;
   margin-bottom: 1.5rem;
-  margin-left: 43px;
+  margin-left: 9px;
   text-decoration: underline rgb(230, 230, 230);
 }
 .paramichu p{
@@ -17383,7 +17383,7 @@ h3.title-big {
   line-height: 2rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
-  margin-left: 60px;
+  margin-left: 8px;
 }
 .about-2-secs-right h3{
   font-weight: 500;
