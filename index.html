@@ -24,7 +24,14 @@
     <link rel="stylesheet" href="assets/css/style-starter.css">
 </head>
 
-<body>
+<body onload="loadingf()">
+
+
+    <div id="loading" class="loading">
+    </div>
+
+
+<div id="full" class="containero">
     <!-- top header -->
     <section class="w3l-top-header">
         <div class="container-fluid">
@@ -386,10 +393,17 @@
             </div>
         </div>
     </footer>
-    <!-- //footer -->
+</div>
+    <script>
 
-    <!-- Js scripts -->
-    <!-- Jquery JS-->
+        var preload = document.getElementById('loading');
+        var full = document.getElementById('full')
+
+        function loadingf() {
+            preload.style.display = 'none'
+            full.style.display = 'block'
+        }
+    </script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
