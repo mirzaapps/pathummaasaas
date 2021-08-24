@@ -17379,3 +17379,12 @@ h3.title-big {
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
+.containero{
+  display: none;
+}
+
+.loading{
+  width: 100%;
+  min-height: 100vh;
+  background: #fff url('loading/loading.gif') no-repeat center;
+}
