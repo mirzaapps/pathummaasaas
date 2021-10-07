@@ -1,570 +1,214 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script data-ad-client="ca-pub-9034884217313857" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <title>M iT</title>
-    <!-- google-fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="y.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="vision.css">
-    <link rel="icon" href="ligomit.png" >
-    <!-- //google-fonts -->
-    <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="assets/css/style-starter.css">
-</head>
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="icon" href="assets/img/ligomit.png">
 
-<body onload="loadingf()">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
+        <title>M iT</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">M iT</a>
+                </div>
 
-    <div id="loading" class="loading">
-    </div>
-
-
-<div id="full" class="containero">
-    <!-- top header -->
-    <section class="w3l-top-header">
-        <div class="container-fluid">
-            <div class="top-content-w3ls d-flex align-items-center justify-content-between">
-                <div class="top-headers">
-                    <ul>
-                        <li>
-                            <a href="contact.html" class="d-sm-block d-none">Contact us!</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone"></i><a href="tel:+91 8129004343">+91 8129004343</a>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i><a href="mailto:mitcoode@gmail.com">mitcoode@gmail.com</a>
-                        </li>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
-                <div class="top-headers top-headers-2">
-                    <ul>
-                        <li>
-                            <a href="#facebook"><span class="fa fa-facebook"></span></a>
-                        </li>
-                        <li>
-                            <a href="#twitter"><span class="fa fa-twitter"></span></a>
-                        </li>
-                        <li>
-                            <a href="#instagram"><span class="fa fa-instagram"></span></a>
-                        </li>
-                        <li class="mr-0">
-                            <a href="#linkedin"><span class="fa fa-linkedin"></span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //top header -->
-    <!--header-->
-    <header id="site-header" class="fixed-top">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg stroke">
-                <h1>
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="assets/images/logo.png" alt="" class="mr-1" />M iT</a>
-                </h1>
-                  
-    <a class="navbar-brand" href="index.html">
-        <img src="ligomit.png" alt="Your logo" title="M iT" style="height: 50px;" />
-    </a>
-                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Courses</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                        <!-- search button 
-                       <div class="search-right ml-lg-3">
-                            <form action="#search" method="GET" class="search-box position-relative">
-                                <div class="input-search">
-                                    <input type="search" placeholder="Enter Keyword" name="search" required="required"
-                                        autofocus="" class="search-popup">
-                                </div>
-                                <button type="submit" class="btn search-btn"><i class="fa fa-search"
-                                        aria-hidden="true"></i></button>
-                            </form>
-                        </div>
-                        //search button -->
-                    </ul>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
                 </div>
-                <!-- toggle switch for light and dark theme -->
-                <div class="cont-ser-position">
-                    <nav class="navigation">
-                        <div class="theme-switch-wrapper">
-                            <label class="theme-switch" for="checkbox">
-                                <input type="checkbox" id="checkbox">
-                                <div class="mode-container">
-                                    <i class="gg-sun"></i>
-                                    <i class="gg-moon"></i>
-                                </div>
-                            </label>
-                        </div>
-                    </nav>
-                </div>
-                <!-- //toggle switch for light and dark theme -->
             </nav>
-        </div>
-    </header>
-    <!--//header-->
+        </header>
 
-    <!-- banner section -->
-    <section class="w3l-main-slider" id="home">
-        <div class="companies20-content">
-            <div class="owl-one owl-carousel owl-theme">
-                <div class="item">
-                    <li>
-                        <div class="slider-info banner-view">
-                            <div class="banner-info">
-                                <div class="container">
-                                    <div class="banner-info-bg">
-                                        <h5>Master tag for your basic of coding</h5>
-                                        <a class="btn btn-style mt-sm-5 mt-4" href="courses.html">
-                                            Courses<i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-                <div class="item">
-                    <li>
-                        <div class="slider-info  banner-view banner-top1">
-                            <div class="banner-info">
-                                <div class="container">
-                                    <div class="banner-info-bg">
-                                        <h5>M iT is the best choice for everyone</h5>
-                                        <a class="btn btn-style mt-sm-5 mt-4" href="courses.html">
-                                            Courses<i class="fa fa-arrow-right ml-2" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //banner section -->
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
 
-    <!-- banner bottom section -->
-    <section class="w3l-bottom-grids-6 pb-lg-5 text-center" id="services">
-        <div class="container">
-            <div class="grids-area-hny main-cont-wthree-fea row">
-                <div class="col-lg-3 col-md-6 px-lg-2">
-                    <div class="area-box color-1">
-                        <i class="fa fa-cogs" aria-hidden="true"></i>
-                        <h4><a href="courses.html" class="title-head">Simple method for Learning</a></h4>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6 px-lg-2 mt-md-0 mt-3">
-                    <div class="area-box color-2">
-                        <i class="fa fa-book" aria-hidden="true"></i>
-                        <h4><a href="courses.html" class="title-head">Super quality online class</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
-                    <div class="area-box color-4">
-                        <i class="fa fa-hourglass-half" aria-hidden="true"></i>
-                        <h4><a href="courses.html" class="title-head">Scheduled timing</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- //banner bottom section -->
 
-    <!-- welcome section -->
-    <section class="w3l-feature-8">
-        <div class="features-main py-5">
-            <div class="container py-md-5 py-4">
-                <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
-                    <h3 class="title-main">Welcome to <span>M iT</span></h3>
+                    <img src="assets/img/prefil.webp" alt="" class="home__img">
                 </div>
-                <div class="row features text-center">
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="feature-body">
-                            <div class="feature-images">
-                                <span class="fa fa-graduation-cap" aria-hidden="true"></span>
-                            </div>
-                            <div class="feature-info mt-4">
-                                <a href="#">
-                                    <h3 class="feature-titel">
-                                        Trending Courses
-                                    </h3>
-                                </a>
-                            </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+              <h2 class="section-title">About</h2>
+
+              <div class="about__container bd-grid">
+                  <div class="about__img">
+                      <img class="michuimg" src="assets/img/Mirza_Aman_portrait-removebg-preview-removebg-preview.png" alt="">
+                  </div>
+
+                  <div>
+                      <h2 class="about__subtitle">I'am Mirza Aman</h2>
+                      <span class="about__profession">Web & Mobile developer</span>
+                      <p class="about__text">Thinking of starting a platform which may ease the process of getting into the world of Information Technology and acquaint the terminologies used in it for the learners. As a student, I had struggled in the beginning of my study and knew exactly what had troubled me in the learning process. Thus, with the guidance and advise of my mentors and teachers, I thought of materializing my ideas by creating opportunities for my fellow beings to gain knowledge that they would have lost if they had wanted but not had an opportunity.To familiarize the common people about the basics of information technologies</p>
+
+                      <div class="about__social">
+                          <a href="https://github.com/mirzaapps" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Development</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Scss</span>
+                        <span class="skills__name">React</span>
+                        <span class="skills__name">Vue</span>
+                        
+                        <h3 class="skills__subtitle">Design</h3>
+                        <span class="skills__name">Figma</span>
+                        <span class="skills__name">Adobe XD</span>
+                        <span class="skills__name">Photoshop</span>
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="projects">
+                <h2 class="section-title">Portfolio</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
-                        <div class="feature-body">
-                            <div class="feature-images">
-                                <span class="fa fa-users" aria-hidden="true"></span>
-                            </div>
-                            <div class="feature-info mt-4">
-                                <a href="#">
-                                    <h3 class="feature-titel">High quality facilities</h3>
-                                </a>
-                            </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 mt-lg-0 mt-5">
-                        <div class="feature-body">
-                            <div class="feature-images">
-                                <span class="fa fa-book" aria-hidden="true"></span>
-                            </div>
-                            <div class="feature-info mt-4">
-                                <a href="#">
-                                    <h3 class="feature-titel">All sources are available</h3>
-                                </a>
-                            </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- //welcome section -->
+            </section>
 
-    <!-- courses section -->
-    <div class="visionm">
-        <div class="container">
-            <div class="row">
-                <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4 ">
-                    <h3 class="title-main"><span>Vision</span><br> To familiarize the common people about the basics of information technologies</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4">
-                    <h3 class="title-main"><span>Mission</span><br> To be a companion by fruitfully filling up the demands of seekers</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //courses section -->
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
 
-    <!-- grids section -->
-    <section class="w3l-homeblock1">
-        <div class="w3-services-ab py-5">
-            <div class="container py-md-5 py-4">
-                <div class="w3-services-grids pb-sm-5 mb-sm-4">
-                    <div class="row w3-services-right-grid">
-                        <div class="col-xl-4">
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">mzawyd@gmail.com</span>
 
-                        </div>
-                        <div class="col-xl-8">
-                            <div class="fea-gd-vv row">
-                                <div class="col-md-6">
-                                    <div class="d-flex align-items-center feature-gd ">
-                                        <div class="icon">
-                                            <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="icon-info">
-                                            <h5>Easy sessions</h5>
-                                            
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-md-0 mt-4">
-                                    <div class="d-flex align-items-center feature-gd">
-                                        <div class="icon">
-                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="icon-info">
-                                            <h5>downloadable Classes</h5>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-4 pt-md-2">
-                                    <div class="d-flex align-items-center feature-gd ">
-                                        <div class="icon">
-                                            <i class="fa fa-headphones" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="icon-info">
-                                            <h5>Learners support</h5>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-4 pt-md-2">
-                                    <div class="d-flex align-items-center feature-gd">
-                                        <div class="icon">
-                                            <i class="fa fa-play-circle" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="icon-info">
-                                            <h5>Live Classes</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="contact__subtitle">PHONE</h3>
+                        <span class="contact__text">+91 8129004343</span>
                     </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- //grids section -->
+            </section>
+        </main>
 
-    <!-- stats -->
-    <div class="visionm">
-        <div class="container">
-            <div class="row">
-                <div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4 " style="margin-top: 90px;">
-                    <h3 class="title-main"><span>At a glance</span><br> Thinking of starting a platform which may ease the process of getting into the 
-                        world of Information Technology and acquaint the terminologies used in it for the learners. As a student, I had struggled in the beginning 
-                         of my study and knew exactly what had troubled me in the learning process. Thus, with the guidance and advise of my mentors and teachers,
-                          I thought of materializing my ideas by creating opportunities for my fellow beings to gain knowledge that they would have lost if they had
-                           wanted but not had an  opportunity.To familiarize the common people about the basics of information technologies</h3>
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">M iT</h2>
+                    <p class="footer__text">All rights reserved.</p>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- about-2 section -->
-<div class="title-heading-w3 text-center mx-auto mb-5 pb-sm-4 ">
-    <div class="container mb-5 pb-sm-4">
-        <div class="team-grids">
-            <a href="#team-single">
-                <img src="assets/images/Mirza Aman portrait.jpeg" class="img-fluid" alt="Mirza Aman">
-            </a>
-        </div>
-        <div class="team-bottom-block p-4">
-            <h3 class="member mb-1"><a href="#team">Mirza Aman</a></h3>
-        </div>
-    </div>
-</div>
 
-    <!-- //about-2 section -->
-
-    <!-- footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-mich">
-                    <h4>M iT</h4>
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORE</h2>
                     <ul>
-                        <li><a href="courses.html">Courses</a></li>
-                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#skills" class="footer__link">Skills</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                        <li><a href="#Contact" class="footer__link">Contact</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-mich">
-                    <h4>Courses</h4>
-                    <ul>
-                        <li><a href="scratch.html">Scratch app creator</a></li>
-                        <li><a href="htmlc.html">Html and css web</a></li>
-                    </ul>
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
                 </div>
-                <div class="footer-mich">
-                    <h4>Media</h4>
-                    <div class="adar-links">
-                        <a href="https://www.facebook.com/midlajmidu.gz.9/"><i class="fab fa-facebook-f" ></i></a>
-                        <a href="https://www.instagram.com/mitcodehome/"><i class="fab fa-instagram" ></i></a>
-                        <a href="https://www.linkedin.com/in/m-it-company-751284215/"><i class="fab fa-linkedin-in" ></i></a>
-                    </div>
-                </div>
+
+
             </div>
-        </div>
-    </footer>
-</div>
-    <script>
+        </footer>
 
-        var preload = document.getElementById('loading');
-        var full = document.getElementById('full')
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        function loadingf() {
-            preload.style.display = 'none'
-            full.style.display = 'block'
-        }
-    </script>
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <script src="vendor/datepicker/moment.min.js"></script>
-    <script src="vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="js/global.js"></script>
-
-    <!-- move top -->
-    <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span class="fa fa-level-up" aria-hidden="true"></span>
-    </button>
-    <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("movetop").style.display = "block";
-            } else {
-                document.getElementById("movetop").style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <!-- //move top -->
-
-    <!-- common jquery plugin -->
-    <script src="assets/js/jquery-3.3.1.min.js"></script>
-    <!-- //common jquery plugin -->
-
-    <!-- banner slider -->
-    <script src="assets/js/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.owl-one').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: false,
-                responsiveClass: true,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplaySpeed: 1000,
-                autoplayHoverPause: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    480: {
-                        items: 1,
-                        nav: false
-                    },
-                    667: {
-                        items: 1,
-                        nav: false
-                    },
-                    1000: {
-                        items: 1,
-                        nav: false
-                    }
-                }
-            })
-        })
-    </script>
-    <!-- //banner slider -->
-
-    <!-- counter for stats -->
-    <script src="assets/js/counter.js"></script>
-    <!-- //counter for stats -->
-
-    <!-- theme switch js (light and dark)-->
-    <script src="assets/js/theme-change.js"></script>
-    <script>
-        function autoType(elementClass, typingSpeed) {
-            var thhis = $(elementClass);
-            thhis.css({
-                "position": "relative",
-                "display": "inline-block"
-            });
-            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
-            thhis = thhis.find(".text-js");
-            var text = thhis.text().trim().split('');
-            var amntOfChars = text.length;
-            var newString = "";
-            thhis.text("|");
-            setTimeout(function () {
-                thhis.css("opacity", 1);
-                thhis.prev().removeAttr("style");
-                thhis.text("");
-                for (var i = 0; i < amntOfChars; i++) {
-                    (function (i, char) {
-                        setTimeout(function () {
-                            newString += char;
-                            thhis.text(newString);
-                        }, i * typingSpeed);
-                    })(i + 1, text[i]);
-                }
-            }, 1500);
-        }
-
-        $(document).ready(function () {
-            // Now to start autoTyping just call the autoType function with the 
-            // class of outer div
-            // The second paramter is the speed between each letter is typed.   
-            autoType(".type-js", 200);
-        });
-    </script>
-    <!-- //theme switch js (light and dark)-->
-
-    <!-- MENU-JS -->
-    <script>
-        $(window).on("scroll", function () {
-            var scroll = $(window).scrollTop();
-
-            if (scroll >= 80) {
-                $("#site-header").addClass("nav-fixed");
-            } else {
-                $("#site-header").removeClass("nav-fixed");
-            }
-        });
-
-        //Main navigation Active Class Add Remove
-        $(".navbar-toggler").on("click", function () {
-            $("header").toggleClass("active");
-        });
-        $(document).on("ready", function () {
-            if ($(window).width() > 991) {
-                $("header").removeClass("active");
-            }
-            $(window).on("resize", function () {
-                if ($(window).width() > 991) {
-                    $("header").removeClass("active");
-                }
-            });
-        });
-    </script>
-    <!-- //MENU-JS -->
-
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
-        });
-    </script>
-    <!-- //disable body scroll which navbar is in active -->
-
-    <!--bootstrap-->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- //bootstrap-->
-    <!-- //Js scripts -->
-</body>
-
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
